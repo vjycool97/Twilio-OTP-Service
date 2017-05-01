@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/smsDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="5dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/info_lay">
+    <TextView
+        android:id="@+id/t_name_sento_itemhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="7dp"
+        android:text="Vijay Kumar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/t_otp_itemhistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP : 123445"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"/>
+
+
+    <TextView
+        android:id="@+id/t_time_itemhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:gravity="right"
+        android:text="12 Dec 1993 12:12:12" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/info_lay"
+        android:background="#414141"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+    <TextView
+        android:id="@+id/t_status_itemhistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:text="Sent Successfully!" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
